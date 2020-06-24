@@ -15,8 +15,6 @@ def clean_lemmatize_token(tweet):
             list_to_remove = [next_word]
             lemmatized = [w for w in lemmatized if w not in list_to_remove]
             lemmatized.append(joined)
-        else:
-            break
     to_remove = ['#']
     lemmatized = [w for w in lemmatized if w not in to_remove]
     lemmatized = ' '.join(lemmatized)
